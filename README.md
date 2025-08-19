@@ -1,4 +1,4 @@
-# 🏨✈️ Japan Accommodation \& Flights Guide 2025
+# 🏨✈️ Japan – Steph and Sister's Accommodation \& Flights (May 2025)
 
 This repository contains a mobile-friendly, collapsible guide for managing accommodation and flight details for your Japan trip. It provides a clear breakdown of bookings, room types, hotel contacts, flight times, and airline links — all structured for easy access on both desktop and mobile.
 
