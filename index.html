@@ -147,5 +147,11 @@ summary.stay {
 </table>
 </details>
 </details>
-</body>
+<script>
+if ('serviceWorker' in navigator) {
+  window.addEventListener('load', function () {
+    navigator.serviceWorker.register('/SP-2025-accommodation-flights/service-worker.js');
+  });
+}
+</script></body>
 </html>
