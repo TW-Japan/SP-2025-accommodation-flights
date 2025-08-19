@@ -1,6 +1,6 @@
-# 🏨✈️ Japan – Steph and Sarah's Accommodation \& Flights (May 2025)
+# 🏨✈️ Japan – Steph and Sarah's Accommodation & Flights (2025)
 
-This repository contains a mobile-friendly, collapsible guide for managing accommodation and flight details for your Japan trip. It provides a clear breakdown of bookings, room types, hotel contacts, flight times, and airline links — all structured for easy access on both desktop and mobile.
+This repository contains a mobile-friendly, collapsible guide for managing accommodation and flight details for Steph and Sarah's Japan trip. It provides a clear breakdown of bookings, room types, hotel contacts, flight times, and airline links — all structured for easy access on both desktop and mobile.
 
 ## ✅ Live Site
 
@@ -9,8 +9,8 @@ Once deployed via GitHub Pages, access the live guide here:
 
 ## ✨ Features
 
-* **Collapsible sections** for Phuket Accommodation, Bangkok Accommodation, and Flights
-* **Clickable hotel and room links** including OneDrive galleries
+* **Collapsible sections** for Osaka, Tokyo, Kyoto Accommodation, and Flights
+* **Placeholder content** allows future updates for destinations, rooms, contacts and directions
 * **Flight lookups** for Jetstar, AirAsia, and Nok Air with check-in and flight status links
 * **Clear booking references** and check-in/out timing
 * **Australian date and time formats** for all travel details
@@ -18,9 +18,10 @@ Once deployed via GitHub Pages, access the live guide here:
 
 ## 📌 Guide Sections
 
-1. 🏝️ Phuket Accommodation
-2. 🏙️ Bangkok Accommodation
-3. ✈️ Flights
+1. 🗾 Osaka Accommodation
+2. 🗼 Tokyo Accommodation
+3. 🏯 Kyoto Accommodation
+4. ✈️ Flights
 
 ## 🔧 How to Use
 
@@ -31,4 +32,3 @@ Once deployed via GitHub Pages, access the live guide here:
 ## 📄 License
 
 This project is open and shareable for personal use.
-
