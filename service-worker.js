@@ -1,5 +1,6 @@
 
 self.addEventListener('install', event => {
+  self.skipWaiting(); // Activate worker immediately
   event.waitUntil(
     caches.open('sp-2025-cache').then(cache => {
       return cache.addAll([
@@ -10,6 +11,10 @@ self.addEventListener('install', event => {
       ]);
     })
   );
+});
+
+self.addEventListener('activate', event => {
+  clients.claim(); // Become available to all pages
 });
 
 self.addEventListener('fetch', event => {
