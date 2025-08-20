@@ -64,6 +64,35 @@ summary.stay {
   font-weight: normal;
   font-size: 1.1em;
 }
+
+/* Mobile-friendly flight table layout */
+@media (max-width: 768px) {
+  summary {
+    font-size: 1.1em;
+  }
+  table {
+    font-size: 0.95em;
+  }
+  th, td {
+    display: block;
+    width: 100%;
+    box-sizing: border-box;
+    padding: 0.4em 0.6em;
+    text-align: left;
+    white-space: normal !important;
+  }
+  thead {
+    display: none;
+  }
+  tbody tr {
+    display: block;
+    margin-bottom: 1em;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    background: #fefefe;
+    padding: 0.5em;
+  }
+}
 </style>
 </head>
 <body>
@@ -124,8 +153,6 @@ summary.stay {
 </tbody>
 </table>
 </details>
-
-
 <details><summary style="color: crimson; font-weight: normal; cursor: pointer;">2. Osaka (KIX) <span style="color: crimson;"> ➔ </span> Sydney (SYD)</summary>
 <details><summary class="stay">Flight: Osaka (KIX) ➔ Cairns (CNS)</summary>
 <table>
