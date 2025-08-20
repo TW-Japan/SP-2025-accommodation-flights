@@ -93,6 +93,20 @@ summary.stay {
     padding: 0.5em;
   }
 }
+
+@media (max-width: 768px) {
+  table:has(th[colspan="2"]) td {
+    padding: 0.3em 0.6em !important;
+    border-bottom: none;
+    font-size: 0.95em;
+  }
+  table:has(th[colspan="2"]) tbody tr {
+    margin-bottom: 0.4em;
+    padding: 0.3em 0.4em;
+    border: none;
+    background: #fff;
+  }
+}
 </style>
 </head>
 <body>
