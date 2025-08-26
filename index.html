@@ -1,5 +1,4 @@
 <!DOCTYPE html>
-
 <html lang="en">
 <head>
 <meta charset="utf-8"/>
@@ -33,6 +32,7 @@
       width: 100%;
       border-collapse: collapse;
       margin-top: 1em;
+      table-layout: fixed;
     }
     th, td {
       padding: 0.5em;
@@ -107,43 +107,107 @@ summary.stay {
     background: #fff;
   }
 }
+
+/* Desktop font reset to avoid unintended shrinking */
+@media (min-width: 769px) {
+  table, th, td { font-size: 1em; }
+}
 </style>
 </head>
 <body>
 <h1>🏨✈️ Japan – Steph and Sarah's Accommodation &amp; Flights (May 2025)</h1>
-<details>
-<summary>🗾 Osaka Accommodation</summary>
-<details><summary class="stay">Stay: 30 August 2025 (1 night)</summary>
-<table style="table-layout: fixed; width: 100%%;">
-<thead><tr><th style="width: 15%%;">Destination</th><th style="width: 15%%;">Room Type</th><th style="width: 15%%;">Stay</th><th style="width: 12%%;">Check-in</th><th style="width: 12%%;">Check-out</th><th style="width: 21%%;">Contact</th><th style="width: 10%%;">Directions</th></tr></thead>
-<tbody><tr><td><strong>Destination:</strong> placeholder</td><td><strong>Room Type:</strong> placeholder</td><td><strong>Stay:</strong> 30 August 2025 (1 night)</td><td><strong>Check-in:</strong> 2:00 PM</td><td><strong>Check-out:</strong> 12:00 PM (lunch)</td><td><strong>Contact:</strong> placeholder</td><td><strong>Directions:</strong> placeholder</td></tr></tbody>
-</table>
-</details>
-<details><summary class="stay">Stay: 05 September 2025 (1 night)</summary>
-<table style="table-layout: fixed; width: 100%%;">
-<thead><tr><th style="width: 15%%;">Destination</th><th style="width: 15%%;">Room Type</th><th style="width: 15%%;">Stay</th><th style="width: 12%%;">Check-in</th><th style="width: 12%%;">Check-out</th><th style="width: 21%%;">Contact</th><th style="width: 10%%;">Directions</th></tr></thead>
-<tbody><tr><td><strong>Destination:</strong> placeholder</td><td><strong>Room Type:</strong> placeholder</td><td><strong>Stay:</strong> 05 September 2025 (1 night)</td><td><strong>Check-in:</strong> 2:00 PM</td><td><strong>Check-out:</strong> 12:00 PM (lunch)</td><td><strong>Contact:</strong> placeholder</td><td><strong>Directions:</strong> placeholder</td></tr></tbody>
-</table>
-</details>
-</details>
-<details>
-<summary>🗼 Tokyo Accommodation</summary>
-<details><summary class="stay">Stay: 01 to 03 September 2025 (3 nights)</summary>
-<table style="table-layout: fixed; width: 100%%;">
-<thead><tr><th style="width: 15%%;">Destination</th><th style="width: 15%%;">Room Type</th><th style="width: 15%%;">Stay</th><th style="width: 12%%;">Check-in</th><th style="width: 12%%;">Check-out</th><th style="width: 21%%;">Contact</th><th style="width: 10%%;">Directions</th></tr></thead>
-<tbody><tr><td><strong>Destination:</strong> placeholder</td><td><strong>Room Type:</strong> placeholder</td><td><strong>Stay:</strong> 01 to 03 September 2025 (3 nights)</td><td><strong>Check-in:</strong> 2:00 PM</td><td><strong>Check-out:</strong> 12:00 PM (lunch)</td><td><strong>Contact:</strong> placeholder</td><td><strong>Directions:</strong> placeholder</td></tr></tbody>
-</table>
-</details>
-</details>
+
 <details>
 <summary>🏯 Kyoto Accommodation</summary>
-<details><summary class="stay">Stay: 04 September 2025 (1 night)</summary>
-<table style="table-layout: fixed; width: 100%%;">
-<thead><tr><th style="width: 15%%;">Destination</th><th style="width: 15%%;">Room Type</th><th style="width: 15%%;">Stay</th><th style="width: 12%%;">Check-in</th><th style="width: 12%%;">Check-out</th><th style="width: 21%%;">Contact</th><th style="width: 10%%;">Directions</th></tr></thead>
-<tbody><tr><td><strong>Destination:</strong> placeholder</td><td><strong>Room Type:</strong> placeholder</td><td><strong>Stay:</strong> 04 September 2025 (1 night)</td><td><strong>Check-in:</strong> 2:00 PM</td><td><strong>Check-out:</strong> 12:00 PM (lunch)</td><td><strong>Contact:</strong> placeholder</td><td><strong>Directions:</strong> placeholder</td></tr></tbody>
+<details><summary class="stay">Arrival: 30 August 2025 (3 nights)</summary>
+<table>
+<thead>
+<tr>
+  <th style="width: 15%">Hotel</th>
+  <th style="width: 15%">Arrival</th>
+  <th style="width: 13%">Depart</th>
+  <th style="width: 10%">Check-in</th>
+  <th style="width: 10%">Check-out</th>
+  <th style="width: 10%">Phone</th>
+  <th style="width: 27%">Address</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+  <td><strong>Hotel:</strong> Vischio Kyoto by GRANVIA</td>
+  <td><strong>Arrival:</strong> 30 Aug 2025 (3 nights)</td>
+  <td><strong>Depart:</strong> 02 Sep 2025</td>
+  <td><strong>Check-in:</strong> 3:00 PM</td>
+  <td><strong>Check-out:</strong> 11:00 AM</td>
+  <td><strong>Phone:</strong> +81 75-280-1111</td>
+  <td><strong>Address:</strong> 44-1 Higashikujo Kamitonodacho, Minami, Kyoto, Kyoto, Japan, 601-8002</td>
+</tr>
+</tbody>
 </table>
 </details>
 </details>
+
+<details>
+<summary>🗼 Tokyo Accommodation</summary>
+<details><summary class="stay">Arrival: 02 September 2025 (3 nights)</summary>
+<table>
+<thead>
+<tr>
+  <th style="width: 15%">Hotel</th>
+  <th style="width: 15%">Arrival</th>
+  <th style="width: 13%">Depart</th>
+  <th style="width: 10%">Check-in</th>
+  <th style="width: 10%">Check-out</th>
+  <th style="width: 10%">Phone</th>
+  <th style="width: 27%">Address</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+  <td><strong>Hotel:</strong> YOTEL Tokyo Gina</td>
+  <td><strong>Arrival:</strong> 02 Sep 2025 (3 nights)</td>
+  <td><strong>Depart:</strong> 05 Sep 2025</td>
+  <td><strong>Check-in:</strong> 3:00 PM</td>
+  <td><strong>Check-out:</strong> 11:00 AM</td>
+  <td><strong>Phone:</strong> +81 3-6274-6301</td>
+  <td><strong>Address:</strong> 1 Chrome-7-7 Shinbashi, Minato City, Tokyo 105-0004, Japan</td>
+</tr>
+</tbody>
+</table>
+</details>
+</details>
+
+<details>
+<summary>🗾 Osaka Accommodation</summary>
+<details><summary class="stay">Arrival: 05 September 2025 (1 night)</summary>
+<table>
+<thead>
+<tr>
+  <th style="width: 15%">Hotel</th>
+  <th style="width: 15%">Arrival</th>
+  <th style="width: 13%">Depart</th>
+  <th style="width: 10%">Check-in</th>
+  <th style="width: 10%">Check-out</th>
+  <th style="width: 10%">Phone</th>
+  <th style="width: 27%">Address</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+  <td><strong>Hotel:</strong> Candeo Hotels Osaka Namba</td>
+  <td><strong>Arrival:</strong> 05 Sep 2025 (1 night)</td>
+  <td><strong>Depart:</strong> 06 Sep 2025</td>
+  <td><strong>Check-in:</strong> 3:00 PM</td>
+  <td><strong>Check-out:</strong> 11:00 AM</td>
+  <td><strong>Phone:</strong> +81 6-6212-2200</td>
+  <td><strong>Address:</strong> 2 Chrome 2-5 Higashishinsaibashi, Chuo Ward, Osaka, 542-0083, Japan</td>
+</tr>
+</tbody>
+</table>
+</details>
+</details>
+
+<!-- FLIGHTS: START (do not edit this block in content-only updates) -->
 <details><summary>✈️ Flights</summary>
 <details><summary style="color: crimson; font-weight: normal; cursor: pointer;">1. Sydney (SYD) <span style="color: crimson;"> ➔ </span> Osaka (KIX)</summary>
 <table>
@@ -195,7 +259,8 @@ summary.stay {
 </table>
 </details>
 </details>
-</details>
+<!-- FLIGHTS: END -->
+
 <script>
 if ('serviceWorker' in navigator) {
   window.addEventListener('load', function () {
