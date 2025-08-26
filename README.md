@@ -18,9 +18,9 @@ Once deployed via GitHub Pages, access the live guide here:
 
 ## 📌 Guide Sections
 
-1. 🗾 Osaka Accommodation
+1. 🏯 Kyoto Accommodation
 2. 🗼 Tokyo Accommodation
-3. 🏯 Kyoto Accommodation
+3. 🗾 Osaka Accommodation
 4. ✈️ Flights
 
 ## 🔧 How to Use
