@@ -262,10 +262,38 @@ summary.stay {
 <!-- FLIGHTS: END -->
 
 <script>
-if ('serviceWorker' in navigator) {
-  window.addEventListener('load', function () {
-    navigator.serviceWorker.register('/SP-2025-accommodation-flights/service-worker.js');
+  // Enhanced SW registration + update flow
+  if ('serviceWorker' in navigator) {
+    window.addEventListener('load', async () => {
+      try {
+        const reg = await navigator.serviceWorker.register('/SP-2025-accommodation-flights/service-worker.js');
+        // Proactively check for updates now and every 30 minutes
+        reg.update();
+        setInterval(() => reg.update(), 30 * 60 * 1000);
+
+        // Auto-reload when a new SW version activates
+        navigator.serviceWorker.addEventListener('message', (event) => {
+          if (event.data && event.data.type === 'NEW_VERSION_ACTIVATED') {
+            location.reload();
+          }
+        });
+      } catch (e) {
+        console.error('SW registration failed', e);
+      }
+    });
+  }
+
+  // Warn about external links when offline
+  document.addEventListener('click', (e) => {
+    const a = e.target.closest('a[href]');
+    if (!a) return;
+    const url = new URL(a.href, location.href);
+    const sameOrigin = url.origin === location.origin && url.pathname.startsWith('/SP-2025-accommodation-flights/');
+    if (!sameOrigin && !navigator.onLine) {
+      e.preventDefault();
+      alert('You are offline. This link needs an internet connection.');
+    }
   });
-}
-</script></body>
+</script>
+</body>
 </html>
